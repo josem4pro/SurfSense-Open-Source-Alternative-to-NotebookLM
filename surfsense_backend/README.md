@@ -116,3 +116,25 @@ See pyproject.toml for detailed dependency information. Key dependencies include
 - rerankers with FlashRank: Advanced result ranking
 - Various AI and NLP libraries
 - Integration clients for Slack, Notion, etc.
+
+### Local Installation
+
+1. Ensure you have **Python 3.12** or newer installed.
+2. Create a virtual environment and activate it:
+
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate
+   ```
+
+3. Install the backend dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the server:
+
+   ```bash
+   python main.py --reload
+   ```
