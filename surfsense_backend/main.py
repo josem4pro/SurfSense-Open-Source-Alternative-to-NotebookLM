@@ -14,9 +14,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     uvicorn.run(
-        "app.app:app",
+        "surfsense_app.app:app",
         host="0.0.0.0",
         log_level="info",
         reload=args.reload,
-        reload_dirs=["app"]
+        reload_dirs=["surfsense_app"]
     )
